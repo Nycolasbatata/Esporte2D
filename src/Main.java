@@ -14,9 +14,10 @@ public class Main {
 
         // Polimorfismo
         qualquer = new Esportista();
-        jogadora = (Esportista) new Pessoa();
-        ((Esportista) qualquer).setIdFederacao(007);
-        System.out.println(((Esportista) qualquer).getIdFederacao());
+        qualquer.setIdFederacao(997);
+        System.out.println(qualquer.getIdFederacao());
+        System.out.println(qualquer.sacar());
+        System.out.println(jogadora.sacar());
 
 
     }
